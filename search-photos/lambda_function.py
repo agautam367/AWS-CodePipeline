@@ -65,7 +65,7 @@ def search_photos(keywords):
         for hit in response["hits"]["hits"]:
             results[hit["_id"]] = hit["_source"]
     
-    print(f"OpenSearch final search results for are {keywords}: {results}")
+    print(f"OpenSearch final search results for {keywords}: {results}")
     return results
     
     
